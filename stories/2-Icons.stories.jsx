@@ -1,13 +1,15 @@
 import React from 'react'
 
 import * as Icons from '../components/icons/index'
+import Photo from '../components/photo'
+import ProfileBox from '../components/profile-box'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Icons'
 }
 
-export const Primary = () => (
+export const Icon = () => (
   <div className="icons">
     <Icons.ArrowBottom />
     <Icons.Bookmark />
@@ -40,3 +42,5 @@ export const Primary = () => (
     <Icons.Twitter />
   </div>
 )
+export const ProfilePhoto = () => <Photo />
+export const Box = () => <ProfileBox />
